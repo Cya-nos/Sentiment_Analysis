@@ -11,7 +11,7 @@ def home():
 
 # Load Hugging Face Sentiment Analysis Models
 multilingual_model = pipeline("sentiment-analysis", model="tabularisai/multilingual-sentiment-analysis")
-english_model = pipeline("sentiment-analysis", model="siebert/sentiment-roberta-large-english")
+english_model = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 def detect_language(text):
     try:
